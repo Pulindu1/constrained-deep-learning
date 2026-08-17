@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datasets and generated artefacts (downloaded/produced by the notebooks)
+classification-data/
+data/
+real_images/
+generated_images/
+*.npy
+*.zip
+*.pt
+*.pth
+
+# Editors
+.vscode/
+.idea/

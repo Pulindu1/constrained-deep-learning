@@ -1,0 +1,22 @@
+# Core
+torch>=2.0
+torchvision>=0.15
+numpy>=1.24
+matplotlib>=3.7
+Pillow>=9.5
+
+# Notebook environment
+jupyterlab>=4.0
+ipython>=8.10
+
+# Dataset download (notebook 01)
+requests>=2.31
+tqdm>=4.65
+
+# Evaluation (notebook 02)
+clean-fid>=0.1.35
+torch-fidelity>=0.3.0
+
+# Install a CUDA build of torch for GPU training, e.g.:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+# See https://pytorch.org/get-started/locally/ for the right command for your setup.
