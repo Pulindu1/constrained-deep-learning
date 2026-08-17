@@ -70,8 +70,8 @@ sample grids and metrics on GitHub without running anything.
 impractical on CPU). Notebook 01 runs on CPU in a reasonable time.
 
 ```bash
-git clone https://github.com/<your-username>/Deep-Learning.git
-cd Deep-Learning
+git clone https://github.com/Pulindu1/constrained-deep-learning.git
+cd constrained-deep-learning
 
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
@@ -260,9 +260,9 @@ schedule it should close most of the gap for free.
 
 ## Part 2 — Generation (CIFAR-100)
 
-**Goal:** train a deep generative model on CIFAR-100 that synthesises new 32×32 images, judged on
-realism, diversity and uniqueness from the originals, with **fewer than 1,000,000 parameters** and
-**at most 50,000 training steps**.
+**Goal:** train a deep generative model on CIFAR-100 that synthesises new 32×32 images — measured
+on realism, diversity, and how distinct they are from the originals — with **fewer than 1,000,000
+parameters** and **at most 50,000 training steps**.
 
 ### The task
 
@@ -407,7 +407,7 @@ learned a continuous mapping rather than memorising isolated points.
 region of image space: global colour statistics and object-like structure are correct, and outputs
 are at a comparable apparent resolution to the originals. The LPIPS **mean** of 0.5578 says
 generated images are on average fairly different from real ones — the model is inventing images
-rather than reproducing training examples, which is the "uniqueness" half of the brief.
+rather than reproducing training examples, which is the distinctness half of the goal.
 
 The LPIPS **standard deviation** of 0.0722 is the problem. A tight spread means the generated
 images are all roughly equally distant from the reference in perceptual space — they lack
